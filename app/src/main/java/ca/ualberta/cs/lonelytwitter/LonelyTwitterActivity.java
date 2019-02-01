@@ -23,6 +23,9 @@ import android.widget.ListView;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+/**
+ * The type Lonely twitter activity.
+ */
 public class LonelyTwitterActivity extends Activity {
 
 	private static final String FILENAME = "file1.sav";
@@ -30,8 +33,10 @@ public class LonelyTwitterActivity extends Activity {
 	private ListView oldTweetsList;
 	private ArrayList<Tweet> tweets;
 	private ArrayAdapter<Tweet> adapter;
-	
-	/** Called when the activity is first created. */
+
+	/**
+	 * Called when the activity is first created.  @param savedInstanceState the saved instance state
+	 */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -63,6 +68,9 @@ public class LonelyTwitterActivity extends Activity {
 
 	}
 
+	/**
+	 * On start.
+	 */
 	@Override
 	protected void onStart() {
 		// TODO Auto-generated method stub
